@@ -154,7 +154,7 @@ namespace _HTTP__FTP_
                 {
                     // URI, определяющий интернет-ресурс 
                     // URI (англ. Uniform Resource Identifier) — единообразный идентификатор ресурса
-                    string query = "http://static.diary.ru/userdir/1/3/0/7/1307931/64913967.jpg";
+                    string query = "https://la-torta.ua/content/images/2/284x402l50nn0/sakharnaia-kartynka-lylo-y-stych-3-20x30sm-82623750326345.png";
 
                     // HttpClient - класс для отправки HTTP-запросов и получения HTTP-ответов от ресурса,
                     // указанного URI (универсальный код ресурса).
@@ -172,7 +172,7 @@ namespace _HTTP__FTP_
                         b[i++] = (byte)c;
                     }
                     // сохраняем полученные данные в файл
-                    FileStream st = new FileStream("../../Birthday.jpg", FileMode.OpenOrCreate);
+                    FileStream st = new FileStream("../../Birthday.png", FileMode.OpenOrCreate);
                     BinaryWriter writer = new BinaryWriter(st);
                     writer.Write(b);
                     writer.Close();
